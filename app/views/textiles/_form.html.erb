@@ -10,24 +10,33 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+ <div class="row">
+  <div class="field col-md-4">
     <%= f.label :size %><br>
-    <%= f.text_field :size %>
+    <%= f.text_field :size, class: "form-control" %>
   </div>
-  <div class="field">
+</div>
+<div class="row">
+  <div class="field col-md-4">
     <%= f.label :material %><br>
-    <%= f.text_field :material %>
+    <%= f.text_field :material, class: "form-control" %>
   </div>
-  <div class="field">
+</div>
+<div class="row">
+  <div class="field col-md-4">
     <%= f.label :picture %><br>
     <%= f.file_field :picture %>
   </div>
-  <div class="field">
+</div>
+<div class="row">
+  <div class="field col-md-4">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+</div>
+<div class="row">
+  <div class="actions col-md-4">
+    <%= f.submit "Create Textile", class: "btn btn-info" %>
   </div>
+</div>
 <% end %>

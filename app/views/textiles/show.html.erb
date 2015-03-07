@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @textile.size %>
+</p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @textile.material %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@textile.picture_url, width: 400) if @textile.picture.present? %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @textile.name %>
+</p>
+
+<%= link_to 'Edit', edit_textile_path(@textile) %> |
+<%= link_to 'Back', textiles_path %>

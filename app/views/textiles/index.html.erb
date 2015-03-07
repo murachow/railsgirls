@@ -14,13 +14,13 @@
   <tbody>
     <% @textiles.each do |textile| %>
       <tr>
-        <td><%= textile.size %></td>
-        <td><%= textile.material %></td>
-        <td><%= textile.picture %></td>
-        <td><%= textile.name %></td>
-        <td><%= link_to 'Show', textile %></td>
-        <td><%= link_to 'Edit', edit_textile_path(textile) %></td>
-        <td><%= link_to 'Destroy', textile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="listpadding"><%= textile.size %></td>
+        <td class="listpadding"><%= textile.material %></td>
+        <td class="listpadding"><%= textile.picture %></td>
+        <td class="listpadding"><%= textile.name %></td>
+        <td class="listpadding"><%= link_to 'Show', textile %></td>
+        <td class="listpadding"><%= link_to 'Edit', edit_textile_path(textile) %></td>
+        <td class="listpadding"><%= link_to 'Destroy', textile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
